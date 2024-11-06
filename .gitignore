@@ -1,3 +1,11 @@
+# Project custom (but usually used for me)
+envfile
+*.csv
+*.yaml
+*.json
+*.log
+*.txt
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

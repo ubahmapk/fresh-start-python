@@ -1,0 +1,38 @@
+# Common pyproject configs for the tools I use.
+# This will need to be copied into the REAL pyproject.toml file.
+
+[tool.bandit]
+exclude_dirs = ["fresh_start/tests"]
+#tests = ["B201", "B301"]
+skips = ["B311"]
+
+[tool.black]
+line-length = 120
+exclude = "fresh_start/__version__.py"
+
+[tool.isort]
+profile = "black"
+line_length = 120
+
+[tool.ruff]
+exclude = ["fresh_start/tests/"]
+line-length = 120
+target-version = "py310"
+lint.select = [
+    "E",   # Pycodestyle errors
+    "F",   # Pyflakes
+    "W",   # Pywicked
+    "B",   # Flake8-bugbear
+    "C4",  # Flake8-comprehensions
+    "I",   # Isort
+    "N",   # Mcabe nested complexity
+    "PGH", # Flake8-pygments
+    "PTH", # Flake8-pytest-helper
+    "Q",   # Flake8-quotes
+    "RET", # Flake8-return
+    "RUF", # Ruff-specific rules
+    "SIM", # Flake8-simplify
+    "UP",  # Flake8-pyupgrade
+    "YTT", # Flake8-2020
+]
+lint.ignore = ["RET501", "F541"]
