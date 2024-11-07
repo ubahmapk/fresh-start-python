@@ -2,20 +2,20 @@
 # This will need to be copied into the REAL pyproject.toml file.
 
 [tool.bandit]
-exclude_dirs = ["fresh_start/tests"]
+exclude_dirs = ["*/tests"]
 #tests = ["B201", "B301"]
 skips = ["B311"]
 
 [tool.black]
 line-length = 120
-exclude = "fresh_start/__version__.py"
+exclude = "__version__.py"
 
 [tool.isort]
 profile = "black"
 line_length = 120
 
 [tool.ruff]
-exclude = ["fresh_start/tests/"]
+exclude = ["*/tests/"]
 line-length = 120
 target-version = "py310"
 lint.select = [
