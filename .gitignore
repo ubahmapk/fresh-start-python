@@ -11,6 +11,12 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Snyk Cache
+.dccache
+
+# Mac OS
+.DS_Store
+
 # C extensions
 *.so
 

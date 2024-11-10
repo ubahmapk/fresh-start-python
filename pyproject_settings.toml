@@ -1,11 +1,6 @@
 # Common pyproject configs for the tools I use.
 # This will need to be copied into the REAL pyproject.toml file.
 
-[tool.bandit]
-exclude_dirs = ["*/tests"]
-#tests = ["B201", "B301"]
-skips = ["B311"]
-
 [tool.black]
 line-length = 120
 exclude = "__version__.py"
