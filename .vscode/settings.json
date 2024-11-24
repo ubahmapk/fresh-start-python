@@ -1,0 +1,11 @@
+{
+    "ruff.configuration": "${workspaceFolder}/ruff.toml",
+    "ruff.lineLength": 120,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+    "vim.highlightedyank.enable": true,
+    "vim.showMarksInGutter": true,
+    "vim.textwidth": 120,
+    "editor.formatOnSave": true,
+    "python.analysis.autoFormatStrings": true,
+}
