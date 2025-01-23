@@ -1,0 +1,31 @@
+[project]
+name = "freshstartpy"
+version = "0.1.0"
+description = "Template pyprojecct.toml for fresh Python projects"
+readme = "README.md"
+authors = [{ name = "Jon Mark Allen", email = "ubahmapk@proton.me" }]
+requires-python = ">=3.13"
+dependencies = ["loguru>=0.7.3", "typer>=0.15.1"]
+license = { file = "LICENSE" }
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.13",
+]
+
+[dependency-groups]
+dev = [
+    "debugpy>=1.8.12",
+    "hatchling>=1.27.0",
+    "pre-commit>=4.1.0",
+    "ruff>=0.9.3",
+    "vermin>=1.6.0",
+]
+
+[project.scripts]
+freshstartpy = "freshstartpy.app:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
