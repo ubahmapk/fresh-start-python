@@ -3,6 +3,7 @@ from typing import Annotated
 
 import typer
 from loguru import logger
+from rich import print as rprint
 
 from freshstartpy.__version__ import __version__
 
@@ -59,7 +60,7 @@ def main(
         ),
     ] = False,
 ) -> None:
-    print("Template for fresh python projects")
+    rprint("[bold green]Template for fresh python projects[/bold green]")
 
 
 if __name__ == "__main__":
