@@ -1,29 +1,36 @@
 {
-  "python.analysis.extraPaths": ["${workspaceFolder}/src"],
-  "python.analysis.autoSearchPaths": true,
-  "python.analysis.stubPath": "${workspaceFolder}/typings",
-  "[python]": {
-    "editor.codeActionsOnSave": {
-      "source.fixAll.ruff": "explicit",
-      "source.organizeImports.ruff": "explicit"
+    "python.analysis.extraPaths": [ "${workspaceFolder}/src" ],
+    "python.analysis.autoSearchPaths": true,
+    "python.analysis.stubPath": "${workspaceFolder}/typings",
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll.ruff": "explicit",
+            "source.organizeImports.ruff": "explicit"
+        },
     },
     "editor.defaultFormatter": "charliermarsh.ruff",
-    "editor.formatOnSave": true
-  },
-  "notebook.codeActionsOnSave": {
-    "notebook.source.fixAll": "explicit",
-    "notebook.source.organizeImports": "explicit"
-  },
-  "notebook.formatOnSave.enabled": true,
-  "ruff.configurationPreference": "filesystemFirst",
-  "ruff.configuration": "${workspaceFolder}/.ruff.toml",
-  "ruff.enable": true,
-  "ruff.lint.extendSelect": ["I"],
-  "ruff.nativeServer": "on",
-  "ruff.trace.server": "messages",
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "python.analysis.ignore": ["layers"],
-  "python.analysis.diagnosticMode": "workspace"
+    "editor.formatOnSave": true,
+    "notebook.codeActionsOnSave": {
+        "notebook.source.fixAll": "explicit",
+        "notebook.source.organizeImports": "explicit"
+    },
+    "notebook.formatOnSave.enabled": true,
+    "ruff.configurationPreference": "filesystemFirst",
+    "ruff.configuration": "${workspaceFolder}/.ruff.toml",
+    "ruff.enable": true,
+    "ruff.lint.extendSelect": [
+        "I"
+    ],
+    "ruff.nativeServer": "on",
+    "ruff.trace.server": "messages",
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "python.analysis.diagnosticMode": "workspace",
+    "python.analysis.typeCheckingMode": "standard",
+    "python.analysis.typeEvaluation.enableReachabilityAnalysis": true,
+    "python.analysis.typeEvaluation.strictDictionaryInference": true,
+    "python.analysis.typeEvaluation.strictListInference": true,
+    "python.analysis.typeEvaluation.strictSetInference": true,
+    "notebook.defaultFormatter": "charliermarsh.ruff",
 }
