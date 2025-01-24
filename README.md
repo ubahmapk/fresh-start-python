@@ -4,6 +4,7 @@ Template repository for a python project
 
 ## Usage
 
+```
 Usage: freshstartpy [OPTIONS]
 
  Example code base for a new python project.
@@ -13,3 +14,49 @@ Usage: freshstartpy [OPTIONS]
 │ --version  -V               Show the version and exit.              │
 │ --help     -h               Show this message and exit.             │
 ╰─────────────────────────────────────────────────────────────────────╯
+```
+
+## Metadata Installation
+
+1. Update the `pyproject.toml` file with the new:
+ - project name
+ - description
+ - author name and email (if it's not me 😄️)
+ - license (if changed)
+ - classifiers
+ - `project.scripts` section (to match the name)
+
+2. Update the `freshstartpy` directory with the name of the script/module
+
+3. Update the `__main__.py` file inside the newly-renamed project directory to use the updated project name in the import statement and the updated `prog_name` variable
+
+`prog_name` is used used in the `--help` option to report the correct script name
+
+4. Update the `__version__.py` file in the project directory (if necessary)
+
+## Python Installation
+
+I strongly recommend the use of [uv](https://docs.astral.sh/uv/) to manage your python environments.
+
+Set up the virtual environment for the project.
+
+1. Create the virtual environment in the root of the project folder
+
+```shell
+uv venv -p 3.13
+```
+(Or whatever Python version expected for this project)
+
+2. Activate the new venv
+
+```shell
+source .venv/bin/activate
+```
+
+You can also configured your editor (like VSCode) to now use this environment when you launch a terminal for this project.
+
+3. Install the project dependencies
+
+```shell
+uv sync -U
+```
