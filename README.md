@@ -16,6 +16,16 @@ Usage: freshstartpy [OPTIONS]
 ╰─────────────────────────────────────────────────────────────────────╯
 ```
 
+## Git
+
+Remove the `.git` directory, so you can use version control in your new project and not try and push stuff back to this one!
+
+```shell
+rm -rf .git
+```
+
+Add the project directory to your VCS repository!
+
 ## Metadata Installation
 
 1. Update the `pyproject.toml` file with the new:
