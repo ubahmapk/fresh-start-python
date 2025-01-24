@@ -60,7 +60,19 @@ def main(
         ),
     ] = False,
 ) -> None:
+    """Main entry point."""
+
+    set_logging_level(verbosity)
+
+    logger.info("Starting program!")
+    logger.debug("Is all this extra logging really necessary??")
+    logger.debug(
+        "No, but it's a good example of how to use the different logging levels."
+    )
+
     rprint("[bold green]Template for fresh python projects[/bold green]")
+
+    logger.info("Done!")
 
 
 if __name__ == "__main__":
