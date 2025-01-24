@@ -1,7 +1,7 @@
 [project]
 name = "freshstartpy"
 version = "0.1.0"
-description = "Template pyprojecct.toml for fresh Python projects"
+description = "Template pyproject.toml for fresh Python projects"
 readme = "README.md"
 authors = [{ name = "Jon Mark Allen", email = "ubahmapk@proton.me" }]
 requires-python = ">=3.13"
