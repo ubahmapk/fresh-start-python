@@ -60,7 +60,7 @@ def main(
         ),
     ] = False,
 ) -> None:
-    """Main entry point."""
+    """Example code base for a new python project."""
 
     set_logging_level(verbosity)
 
