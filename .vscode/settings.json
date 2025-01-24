@@ -7,8 +7,9 @@
             "source.fixAll.ruff": "explicit",
             "source.organizeImports.ruff": "explicit"
         },
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true
     },
-    "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.formatOnSave": true,
     "notebook.codeActionsOnSave": {
         "notebook.source.fixAll": "explicit",
