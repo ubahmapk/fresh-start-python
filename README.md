@@ -16,7 +16,7 @@ Usage: freshstartpy [OPTIONS]
 ╰─────────────────────────────────────────────────────────────────────╯
 ```
 
-## Git
+## Git (Phase 1)
 
 Remove the `.git` directory, so you can use version control in your new project and not try and push stuff back to this one!
 
@@ -71,7 +71,7 @@ You can also configured your editor (like VSCode) to now use this environment wh
 uv sync -U
 ```
 
-## Git
+## Git (Phase 2)
 
 Create the new repository and add the project.
 
