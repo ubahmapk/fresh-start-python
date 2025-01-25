@@ -70,3 +70,25 @@ You can also configured your editor (like VSCode) to now use this environment wh
 ```shell
 uv sync -U
 ```
+
+## Git
+
+Create the new repository and add the project.
+
+1. Initialize git VCS
+
+```shell
+git init .
+```
+
+2. Create the repository
+
+This assumes the repo will be hosted on github.com and that you have the `gh` client installed.
+
+```shell
+gh repo create [REPO_NAME] --private -d "[PROJECT DESCRIPTION]" --source=.
+```
+
+The above command also assumes you wish the repository to be private. Substitute options to your liking. 😄
+
+Otherwise, please follow the instructions provided at the git provider you're using
