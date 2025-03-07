@@ -34,4 +34,5 @@
     "python.analysis.typeEvaluation.strictListInference": true,
     "python.analysis.typeEvaluation.strictSetInference": true,
     "notebook.defaultFormatter": "charliermarsh.ruff",
+    "python.languageServer": "Pylance"
 }
