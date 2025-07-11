@@ -14,7 +14,7 @@ def set_logging_level(verbosity: int) -> None:
     # Default level
     log_level = "INFO"
 
-    if verbosity is not None:
+    if verbosity:
         if verbosity == 1:
             log_level = "INFO"
         elif verbosity > 1:
@@ -48,7 +48,7 @@ def main(
         int,
         typer.Option("--verbose", "-v", count=True, help="Repeat for extra verbosity"),
     ] = 0,
-    version: Annotated[
+    version: Annotated[  # pyright: ignore[reportUnusedParameter]
         bool,
         typer.Option(
             "--version",
