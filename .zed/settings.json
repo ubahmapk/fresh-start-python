@@ -33,6 +33,7 @@
         },
         "diagnosticMode": "workspace",
         "disableOrganizeImports": true,
+        "typeCheckingMode": "recommended",
         "inlayHints": {
           "variableTypes": true,
           "functionReturnTypes": true,
